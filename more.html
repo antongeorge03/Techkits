@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a1932;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            height: 400px; /* Set a fixed height for all cards */
+            margin: 20px;
+            display: inline-block;
+            transition: transform 0.3s;
+            background-color: #ffffff; /* Background color for cards */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            border-color: #3498db;
+            background: linear-gradient(45deg, #3498db, #e74c3c); /* Gradient hover effect */
+            background-clip: padding-box;
+        }
+
+        .product-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product-description {
+            margin-top: 10px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product-rating {
+            color: #ab6f14;
+            margin-top: 10px;
+        }
+
+        .add-to-cart-button {
+            display: block;
+            margin-top: 10px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img class="product-img" src="cng1.jpg" alt="Product 1">
+        <p class="product-name">ASTRO CHROME PLATED STEEL RODS</p>
+        <p class="product-description">The Astro brand Super Smooth High Finish rods are high quality guide rods made
+            from high carbon bearing steel for high smoothness and long life. They are used along with linear bearings
+            in CNC machines, 3d printers and other precision machinery as an accurate way to guide the linear motion in
+            a cost-effective way.</p>
+        <p class="product-price" style="color: #ffffff; font-size: 20px">$19.99</p>
+        <p class="product-rating " style="font-size: 20px;">Rating: 4.5</p>
+        <a class="add-to-cart-button" href="#">Add to Cart</a>
+    </div>
+    <div class="card">
+        <img class="product-img" src="cng2.jpg" alt="Product 2">
+        <p class="product-name">ASTRO LMKUU / LMKLUU BEARINGS</p>
+        <p class="product-description">The Linear Bearing LMK16LUU 16mm Square Flange Bushing is a low-cost linear
+            motion system which equips with the cylindrical shaft. The working load of such bearings is small due to the
+            point contact of the ball and the shaft.</p>
+        <p class="product-price" style="color: #0f0101; font-size: 20px">$24.99</p>
+        <p class="product-rating" style="color: #dab80c; font-size: 20px">Rating: 4.0</p>
+        <a class="add-to-cart-button" href="#">Add to Cart</a>
+    </div>
+    <div class="card">
+        <img class="product-img" src="cng3.jpg" alt="Product 3">
+        <p class="product-name">ASTRO LMUU / LMLUU BEARINGS</p>
+        <p class="product-description">LM8UU Linear Bearings.
+            8mm Inside diameter, 15mm outside diameter, 24mm length.
+            Great for linear motion on 3D Printer, CNC, and other applications.</p>
+        <p class="product-price" style="color: #000000; font-size: 20px">$29.99</p>
+        <p class="product-rating" style="color: #0a0000; font-size: 20px">Rating: 4.8</p>
+        <a class="add-to-cart-button" href="#" style="padding-top10px: ;">Add to Cart</a>
+    </div>
+</body>
+
+</html>
